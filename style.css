@@ -1,0 +1,128 @@
+/* Body Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(to right, #00C6FF, #0072FF);
+    color: white;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the weather app */
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Headline Styling */
+.title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px; 
+}
+
+/* Form Styling */
+#weatherForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#weather{
+    background-color:white;
+}
+
+
+
+input {
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #0072FF;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #00C6FF;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #0072FF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00C6FF;
+}
+
+/* Weather Info Box Styling */
+#weather {
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Weather Info Text */
+#weather h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#weather p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #fff;
+}
+
+/* Weather Icon Styling */
+#weather img {
+    width: 60px;
+    margin-top: 10px;
+}
+
+/* Error Message Styling */
+#error {
+    color: #ff4d4d;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Media Queries for Mobile Optimization */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
